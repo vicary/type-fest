@@ -1,7 +1,7 @@
-import type {JsonPrimitive, JsonValue} from './basic';
-import type {Merge} from './merge';
-import type {NegativeInfinity, PositiveInfinity} from './numeric';
-import type {TypedArray} from './typed-array';
+import type { JsonPrimitive, JsonValue } from './basic.d.ts';
+import type { Merge } from './merge.d.ts';
+import type { NegativeInfinity, PositiveInfinity } from './numeric.d.ts';
+import type { TypedArray } from './typed-array.d.ts';
 
 // Note: The return value has to be `any` and not `unknown` so it can match `void`.
 type NotJsonable = ((...args: any[]) => any) | undefined | symbol;

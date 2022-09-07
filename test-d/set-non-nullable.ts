@@ -1,5 +1,5 @@
-import {expectType, expectError} from 'tsd';
-import type {SetNonNullable} from '../index';
+import { expectError, expectType } from 'tsd';
+import type { SetNonNullable } from '../index.d.ts';
 
 // Update one possibly undefined key and one possibly null key to non-nullable.
 declare const variation1: SetNonNullable<{a: number; b: string | undefined; c: boolean | null}, 'b' | 'c'>;

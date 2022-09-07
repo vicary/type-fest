@@ -1,6 +1,6 @@
-import {expectType, expectAssignable} from 'tsd';
-import type {UpperCaseCharacters, WordSeparators} from '../source/internal';
-import type {SplitIncludingDelimiters, DelimiterCase} from '../source/delimiter-case';
+import { expectAssignable, expectType } from 'tsd';
+import type { DelimiterCase, SplitIncludingDelimiters } from '../source/delimiter-case.d.ts';
+import type { UpperCaseCharacters, WordSeparators } from '../source/internal.d.ts';
 
 const splitFromCamel: SplitIncludingDelimiters<'fooBar', WordSeparators | UpperCaseCharacters> = ['foo', 'B', 'ar'];
 expectType<['foo', 'B', 'ar']>(splitFromCamel);

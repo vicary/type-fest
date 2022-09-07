@@ -1,5 +1,5 @@
-import {expectType, expectError} from 'tsd';
-import type {Schema} from '../index';
+import { expectError, expectType } from 'tsd';
+import type { Schema } from '../index.d.ts';
 
 const foo = {
 	baz: 'fred',

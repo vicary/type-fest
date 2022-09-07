@@ -1,5 +1,5 @@
-import {expectAssignable, expectError, expectNotAssignable, expectType} from 'tsd';
-import type {Simplify} from '../index';
+import { expectAssignable, expectError, expectNotAssignable, expectType } from 'tsd';
+import type { Simplify } from '../index.d.ts';
 
 type PositionProps = {
 	top: number;
