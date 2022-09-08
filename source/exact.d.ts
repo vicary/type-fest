@@ -1,6 +1,6 @@
-import type {KeysOfUnion, ArrayElement, ObjectValue} from './internal';
-import type {Opaque} from './opaque';
-import type {IsEqual} from './is-equal';
+import type {KeysOfUnion, ArrayElement, ObjectValue} from './internal.d.ts';
+import type {Opaque} from './opaque.d.ts';
+import type {IsEqual} from './is-equal.d.ts';
 
 /**
 Create a type from `ParameterType` and `InputType` and change keys exclusive to `InputType` to `never`.
@@ -58,5 +58,5 @@ export type Exact<ParameterType, InputType> =
 			: ParameterType extends readonly unknown[] ? ReadonlyArray<Exact<ArrayElement<ParameterType>, ArrayElement<InputType>>>
 				// For Opaque types, internal details are hidden from public, so let's leave it as is.
 				: ParameterType extends Opaque<infer OpaqueType, infer OpaqueToken> ? ParameterType
-					: ParameterType extends object ? ExactObject<ParameterType, InputType>
+					: ParameterType extends Record<string, unknown> ? ExactObject<ParameterType, InputType>
 						: ParameterType;

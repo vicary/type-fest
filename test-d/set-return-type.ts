@@ -1,5 +1,5 @@
-import {expectType, expectError} from 'tsd';
-import type {SetReturnType} from '../index';
+import { expectError, expectType } from 'tsd';
+import type { SetReturnType } from '../index.d.ts';
 
 declare const anything: unknown;
 

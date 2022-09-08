@@ -1,6 +1,6 @@
-import type {Primitive} from './primitive';
-import type {Simplify} from './simplify';
-import type {Trim} from './trim';
+import type {Primitive} from './primitive.d.ts';
+import type {Simplify} from './simplify.d.ts';
+import type {Trim} from './trim.d.ts';
 
 /**
 Infer the length of the given array `<T>`.

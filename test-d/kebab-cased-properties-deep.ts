@@ -1,5 +1,5 @@
-import {expectType} from 'tsd';
-import type {KebabCasedPropertiesDeep} from '../index';
+import { expectType } from 'tsd';
+import type { KebabCasedPropertiesDeep } from '../index.d.ts';
 
 declare const foo: KebabCasedPropertiesDeep<{helloWorld: {fooBar: string}}>;
 expectType<{'hello-world': {'foo-bar': string}}>(foo);

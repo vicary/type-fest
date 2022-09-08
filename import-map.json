@@ -1,0 +1,5 @@
+{
+	"imports": {
+		"tsd": "https://cdn.skypack.dev/tsd?dts"
+	}
+}
