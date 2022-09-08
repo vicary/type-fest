@@ -1,5 +1,5 @@
 import {expectType} from 'tsd';
-import type {TsConfigJson} from '../index';
+import type {TsConfigJson} from '../index.d.ts';
 
 const tsConfig: TsConfigJson = {};
 
