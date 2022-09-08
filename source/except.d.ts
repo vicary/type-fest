@@ -1,4 +1,4 @@
-import type {IsEqual} from './internal';
+import type { IsEqual } from './internal.d.ts';
 
 /**
 Filter out keys from an object.

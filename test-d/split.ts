@@ -1,5 +1,5 @@
-import {expectType} from 'tsd';
-import type {Split} from '../index';
+import { expectType } from 'tsd';
+import type { Split } from '../index.d.ts';
 
 declare function split<
 	S extends string,

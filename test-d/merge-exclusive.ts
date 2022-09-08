@@ -1,5 +1,5 @@
-import {expectError, expectAssignable} from 'tsd';
-import type {MergeExclusive} from '../index';
+import { expectAssignable, expectError } from 'tsd';
+import type { MergeExclusive } from '../index.d.ts';
 
 type BaseOptions = {
 	option?: string;
