@@ -1,8 +1,8 @@
-{% note %}
+This is a fork of the original `type-fest` from NPM with modifications for Deno compatibility, this repo will be kept up to date via periodic rebasing.
 
-**Note:** This is a fork of the original `type-fest` with modifications for Deno compatibility, this repo will be kept up to date via periodic rebasing.
+Want to see a Deno port happening? [buy me a coffee](https://www.buymeacoffee.com/vicary) and tell me about it.
 
-{% endnote %}
+---
 
 <div align="center">
 	<br>
@@ -111,11 +111,19 @@ PR welcome for additional commonly needed types and docs improvements. Read the 
 
 ## Install
 
-```sh
-npm install type-fest
+```ts
+import * as TypeFest from "https://deno.land/x/fest/mod.ts";
 ```
 
-_Requires TypeScript >=4.7_
+or via Import Map
+
+```json
+{
+	"imports": {
+		"type-fest": "https://deno.land/x/fest/mod.ts"
+	}
+}
+```
 
 ## Usage
 
