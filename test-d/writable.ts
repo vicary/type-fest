@@ -1,5 +1,5 @@
-import {expectType, expectError} from 'tsd';
-import type {Writable} from '../index';
+import { expectError, expectType } from 'tsd';
+import type { Writable } from '../index.d.ts';
 
 type Foo = {
 	readonly a: number;

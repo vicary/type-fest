@@ -1,4 +1,4 @@
-import type {KeysOfUnion} from './internal';
+import type { KeysOfUnion } from './internal.d.ts';
 
 /**
 Extract the element of an array that also works for array union.
