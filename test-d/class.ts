@@ -1,5 +1,5 @@
 import {expectError} from 'tsd';
-import type {Constructor} from '../index';
+import type {Constructor} from '../index.d.ts';
 
 class Foo {
 	constructor(x: number, y: any) {

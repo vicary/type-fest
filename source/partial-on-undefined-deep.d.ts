@@ -1,5 +1,5 @@
-import type {BuiltIns} from './internal';
-import type {Merge} from './merge';
+import type {BuiltIns} from './internal.d.ts';
+import type {Merge} from './merge.d.ts';
 
 /**
 @see PartialOnUndefinedDeep

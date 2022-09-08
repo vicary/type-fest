@@ -1,6 +1,6 @@
-import {expectType, expectError} from 'tsd';
-import type {ReadonlyDeep} from '../index';
-import type {ReadonlyObjectDeep} from '../source/readonly-deep';
+import {expectError, expectType} from 'tsd';
+import type {ReadonlyDeep} from '../index.d.ts';
+import type {ReadonlyObjectDeep} from '../source/readonly-deep.d.ts';
 
 type Overloaded = {
 	(foo: number): string;

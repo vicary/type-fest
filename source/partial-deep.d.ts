@@ -1,4 +1,4 @@
-import type {BuiltIns} from './internal';
+import type {BuiltIns} from './internal.d.ts';
 
 /**
 @see PartialDeep

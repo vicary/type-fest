@@ -1,5 +1,5 @@
-import type {Except} from './except';
-import type {Simplify} from './simplify';
+import type {Except} from './except.d.ts';
+import type {Simplify} from './simplify.d.ts';
 
 /**
 Create a type that strips `readonly` from all or some of an object's keys. Inverse of `Readonly<T>`.
