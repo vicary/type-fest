@@ -1,5 +1,5 @@
-import type {Subtract} from './internal';
-import type {IsEqual} from './is-equal';
+import type {Subtract} from './internal.d.ts';
+import type {IsEqual} from './is-equal.d.ts';
 
 type Recursive<T> = Array<Recursive<T>>;
 

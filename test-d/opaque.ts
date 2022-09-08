@@ -1,5 +1,5 @@
 import {expectAssignable, expectNotAssignable, expectNotType, expectType} from 'tsd';
-import type {Opaque, UnwrapOpaque} from '../index';
+import type {Opaque, UnwrapOpaque} from '../index.d.ts';
 
 type Value = Opaque<number, 'Value'>;
 

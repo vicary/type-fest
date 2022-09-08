@@ -1,4 +1,4 @@
-import type {CamelCase} from './camel-case';
+import type {CamelCase} from './camel-case.d.ts';
 
 /**
 Converts a string literal to pascal-case.
