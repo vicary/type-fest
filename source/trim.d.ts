@@ -1,4 +1,4 @@
-import type {Whitespace} from './internal';
+import type {Whitespace} from './internal.d.ts';
 
 /**
 Remove spaces from the left side.

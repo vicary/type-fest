@@ -1,6 +1,6 @@
-import type {IfUnknown} from './if-unknown';
-import type {BuiltIns, LiteralKeyOf} from './internal';
-import type {Merge} from './merge';
+import type {IfUnknown} from './if-unknown.d.ts';
+import type {BuiltIns, LiteralKeyOf} from './internal.d.ts';
+import type {Merge} from './merge.d.ts';
 
 /**
 @see PartialOnUndefinedDeep

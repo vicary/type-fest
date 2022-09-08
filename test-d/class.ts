@@ -1,5 +1,5 @@
 import {expectAssignable, expectError, expectNotAssignable, expectType} from 'tsd';
-import type {Class, Constructor, IsAny} from '../index';
+import type {Class, Constructor, IsAny} from '../index.d.ts';
 
 class Foo {
 	constructor(x: number, y: any) {

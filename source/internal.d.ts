@@ -1,18 +1,17 @@
-import type {Primitive} from './primitive';
-import type {Simplify} from './simplify';
-import type {Trim} from './trim';
-import type {IsAny} from './is-any';
-import type {NegativeInfinity, PositiveInfinity} from './numeric';
-import type {GreaterThan} from './greater-than';
-import type {LessThan} from './less-than';
-import type {IsLiteral} from './is-literal';
-import type {UnknownRecord} from './unknown-record';
-import type {IsNever} from './is-never';
-import type {UnknownArray} from './unknown-array';
-import type {IsEqual} from './is-equal';
+import type {Primitive} from './primitive.d.ts';
+import type {Simplify} from './simplify.d.ts';
+import type {Trim} from './trim.d.ts';
+import type {IsAny} from './is-any.d.ts';
+import type {NegativeInfinity, PositiveInfinity} from './numeric.d.ts';
+import type {GreaterThan} from './greater-than.d.ts';
+import type {LessThan} from './less-than.d.ts';
+import type {IsLiteral} from './is-literal.d.ts';
+import type {IsNever} from './is-never.d.ts';
+import type {UnknownArray} from './unknown-array.d.ts';
+import type {IsEqual} from './is-equal.d.ts';
 
 // TODO: Remove for v5.
-export type {UnknownRecord} from './unknown-record';
+export type {UnknownRecord} from './unknown-record.d.ts';
 
 /**
 Infer the length of the given array `<T>`.

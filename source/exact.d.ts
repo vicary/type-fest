@@ -1,7 +1,7 @@
-import type {ArrayElement, ObjectValue} from './internal';
-import type {Opaque, TagContainer} from './opaque';
-import type {IsEqual} from './is-equal';
-import type {KeysOfUnion} from './keys-of-union';
+import type {ArrayElement, ObjectValue} from './internal.d.ts';
+import type {TagContainer} from './opaque.d.ts';
+import type {IsEqual} from './is-equal.d.ts';
+import type {KeysOfUnion} from './keys-of-union.d.ts';
 
 /**
 Create a type from `ParameterType` and `InputType` and change keys exclusive to `InputType` to `never`.

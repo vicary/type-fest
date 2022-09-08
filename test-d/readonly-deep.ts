@@ -1,7 +1,7 @@
 import {expectType, expectError, expectAssignable} from 'tsd';
-import type {Opaque, tag} from '../source/opaque';
-import type {ReadonlyDeep, ReadonlyObjectDeep} from '../source/readonly-deep';
-import type {JsonValue} from '../source/basic';
+import type {Opaque, tag} from '../source/opaque.d.ts';
+import type {ReadonlyDeep, ReadonlyObjectDeep} from '../source/readonly-deep.d.ts';
+import type {JsonValue} from '../source/basic.d.ts';
 
 type Overloaded = {
 	(foo: number): string;

@@ -1,6 +1,6 @@
-import type {DelimiterCase} from './delimiter-case';
-import type {NonRecursiveType} from './internal';
-import type {UnknownArray} from './unknown-array';
+import type {DelimiterCase} from './delimiter-case.d.ts';
+import type {NonRecursiveType} from './internal.d.ts';
+import type {UnknownArray} from './unknown-array.d.ts';
 
 /**
 Convert object properties to delimiter case recursively.

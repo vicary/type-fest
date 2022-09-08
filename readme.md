@@ -1,7 +1,13 @@
+This is a fork of the original `type-fest` from NPM with modifications for Deno compatibility, this repo will be kept up to date via periodic rebasing.
+
+Want to see a Deno port happening? [buy me a coffee](https://www.github.com/sponsors/vicary) and tell me about it.
+
+---
+
 <div align="center">
 	<br>
 	<br>
-	<img src="media/logo.svg" alt="type-fest" height="300">
+	<img src="https://raw.githubusercontent.com/vicary/type-fest/main/media/logo.svg" alt="type-fest" height="300">
 	<br>
 	<br>
 	<b>A collection of essential TypeScript types</b>
@@ -71,8 +77,8 @@ PR welcome for additional commonly needed types and docs improvements. Read the 
 
 ## Install
 
-```sh
-npm install type-fest
+```ts
+import * as TypeFest from "https://deno.land/x/fest/mod.ts";
 ```
 
 *Requires TypeScript >=5.1*

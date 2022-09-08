@@ -1,6 +1,6 @@
-import type {SplitIncludingDelimiters} from './delimiter-case';
-import type {SnakeCase} from './snake-case';
-import type {Includes} from './includes';
+import type {SplitIncludingDelimiters} from './delimiter-case.d.ts';
+import type {SnakeCase} from './snake-case.d.ts';
+import type {Includes} from './includes.d.ts';
 
 /**
 Returns a boolean for whether the string is screaming snake case.

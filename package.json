@@ -3,13 +3,19 @@
 	"version": "4.13.1",
 	"description": "A collection of essential TypeScript types",
 	"license": "(MIT OR CC0-1.0)",
-	"repository": "sindresorhus/type-fest",
-	"funding": "https://github.com/sponsors/sindresorhus",
+	"repository": "https://github.com/vicary/type-fest",
+	"funding": "https://github.com/sponsors/vicary",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
 		"url": "https://sindresorhus.com"
 	},
+	"contributors": [
+		{
+			"name": "Vicary A.",
+			"email": "vicary.archangel@member.mensa.org"
+		}
+	],
 	"types": "./index.d.ts",
 	"sideEffects": false,
 	"engines": {
