@@ -1,5 +1,5 @@
-import type {KeysOfUnion, ArrayElement, ObjectValue} from './internal';
-import type {Opaque} from './opaque';
+import type {KeysOfUnion, ArrayElement, ObjectValue} from './internal.d.ts';
+import type {Opaque} from './opaque.d.ts';
 
 /**
 Create a type from `ParameterType` and `InputType` and change keys exclusive to `InputType` to `never`.

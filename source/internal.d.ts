@@ -1,5 +1,5 @@
-import type {Primitive} from './primitive';
-import type {Simplify} from './simplify';
+import type {Primitive} from './primitive.d.ts';
+import type {Simplify} from './simplify.d.ts';
 
 /**
 Infer the length of the given array `<T>`.

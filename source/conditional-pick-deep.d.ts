@@ -1,7 +1,7 @@
-import type {Opaque} from './opaque';
-import type {IsEqual} from './is-equal';
-import type {ConditionalExcept} from './conditional-except';
-import type {ConditionalSimplifyDeep} from './conditional-simplify';
+import type {Opaque} from './opaque.d.ts';
+import type {IsEqual} from './is-equal.d.ts';
+import type {ConditionalExcept} from './conditional-except.d.ts';
+import type {ConditionalSimplifyDeep} from './conditional-simplify.d.ts';
 
 /**
 Used to mark properties that should be excluded.
