@@ -1,4 +1,4 @@
-import type {IsEqual, Subtract} from './internal';
+import type { IsEqual, Subtract } from './internal.d.ts';
 
 type Recursive<T> = ReadonlyArray<Recursive<T>>;
 

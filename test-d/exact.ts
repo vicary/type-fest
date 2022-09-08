@@ -1,4 +1,4 @@
-import type {Exact} from '../index';
+import type { Exact } from '../index.d.ts';
 
 { // Spec - string type
 	type Type = string;

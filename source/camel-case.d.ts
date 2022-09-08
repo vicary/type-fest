@@ -1,5 +1,5 @@
-import type {WordSeparators} from '../source/internal';
-import type {Split} from './split';
+import type { WordSeparators } from '../source/internal.d.ts';
+import type { Split } from './split.d.ts';
 
 /**
 Step by step takes the first item in an array literal, formats it and adds it to a string literal, and then recursively appends the remainder.

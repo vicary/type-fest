@@ -1,5 +1,5 @@
-import {expectType, expectAssignable} from 'tsd';
-import type {CamelCase, Split} from '../index';
+import { expectAssignable, expectType } from 'tsd';
+import type { CamelCase, Split } from '../index.d.ts';
 
 // Split
 const prefixSplit: Split<'--very-prefixed', '-'> = ['', '', 'very', 'prefixed'];
