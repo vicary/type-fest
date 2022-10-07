@@ -7,7 +7,7 @@ Want to see a Deno port happening? [buy me a coffee](https://www.buymeacoffee.co
 <div align="center">
 	<br>
 	<br>
-	<img src="media/logo.svg" alt="type-fest" height="300">
+	<img src="https://raw.githubusercontent.com/vicary/type-fest/main/media/logo.svg" alt="type-fest" height="300">
 	<br>
 	<br>
 	<b>A collection of essential TypeScript types</b>
