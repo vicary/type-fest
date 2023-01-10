@@ -1,5 +1,5 @@
-import { expectAssignable, expectError, expectNotAssignable } from 'tsd';
-import type { ReadonlyTuple } from '../index.d.ts';
+import {expectAssignable, expectError, expectNotAssignable} from 'tsd';
+import type {ReadonlyTuple} from '../index.d.ts';
 
 type TupleOfThreeStrings = ReadonlyTuple<string, 3>;
 

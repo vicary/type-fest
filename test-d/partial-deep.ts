@@ -1,5 +1,5 @@
-import { expectAssignable, expectError, expectType } from 'tsd';
-import type { PartialDeep } from '../index.d.ts';
+import {expectAssignable, expectError, expectType} from 'tsd';
+import type {PartialDeep} from '../index.d.ts';
 
 const foo = {
 	baz: 'fred',

@@ -1,5 +1,5 @@
-import { expectType } from 'tsd';
-import type { MultidimensionalArray } from '../index.d.ts';
+import {expectType} from 'tsd';
+import type {MultidimensionalArray} from '../index.d.ts';
 
 function createArray<T extends number>(dimensions: T): MultidimensionalArray<unknown, T> {
 	const root: unknown[] = [];

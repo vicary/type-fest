@@ -1,4 +1,4 @@
-import type { PascalCase } from './pascal-case.d.ts';
+import type {PascalCase} from './pascal-case.d.ts';
 
 /**
 Convert object properties to pascal case but not recursively.

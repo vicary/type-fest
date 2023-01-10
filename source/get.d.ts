@@ -1,6 +1,6 @@
-import type { StringDigit } from '../source/internal.d.ts';
-import type { Split } from './split.d.ts';
-import type { StringKeyOf } from './string-key-of.d.ts';
+import type {StringDigit} from '../source/internal.d.ts';
+import type {Split} from './split.d.ts';
+import type {StringKeyOf} from './string-key-of.d.ts';
 
 type GetOptions = {
 	/**

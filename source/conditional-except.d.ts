@@ -1,5 +1,5 @@
-import type { ConditionalKeys } from './conditional-keys.d.ts';
-import type { Except } from './except.d.ts';
+import type {ConditionalKeys} from './conditional-keys.d.ts';
+import type {Except} from './except.d.ts';
 
 /**
 Exclude keys from a shape that matches the given `Condition`.

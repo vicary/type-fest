@@ -1,5 +1,5 @@
-import { expectAssignable, expectError, expectType } from 'tsd';
-import type { EmptyObject, IsEmptyObject } from '../index.d.ts';
+import {expectAssignable, expectError, expectType} from 'tsd';
+import type {EmptyObject, IsEmptyObject} from '../index.d.ts';
 
 declare let foo: EmptyObject;
 

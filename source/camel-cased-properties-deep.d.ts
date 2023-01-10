@@ -1,4 +1,4 @@
-import type { CamelCase, CamelCaseOptions } from "./camel-case.d.ts";
+import type {CamelCase, CamelCaseOptions} from "./camel-case.d.ts";
 
 /**
 Convert object properties to camel case recursively.

@@ -1,5 +1,5 @@
-import { expectAssignable } from 'tsd';
-import type { PartialOnUndefinedDeep } from '../index.d.ts';
+import {expectAssignable} from 'tsd';
+import type {PartialOnUndefinedDeep} from '../index.d.ts';
 
 type TestingType = {
 	function: (() => void) | undefined;

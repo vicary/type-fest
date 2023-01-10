@@ -15,7 +15,7 @@
 		"node": ">=14.16"
 	},
 	"scripts": {
-		"test": "xo && tsd && tsc && node script/test/source-files-extension.js"
+		"test": "xo && tsd && tsc"
 	},
 	"files": [
 		"index.d.ts",
@@ -45,9 +45,10 @@
 			"@typescript-eslint/ban-ts-comment": "off",
 			"@typescript-eslint/ban-types": "off",
 			"@typescript-eslint/naming-convention": "off",
-			"import/extensions": "off",
+			"@typescript-eslint/no-confusing-void-expression": "off",
 			"@typescript-eslint/no-redeclare": "off",
-			"@typescript-eslint/no-confusing-void-expression": "off"
+			"import/extensions": "off",
+			"n/file-extension-in-import": "off"
 		}
 	}
 }

@@ -1,4 +1,4 @@
-import type { DelimiterCasedProperties } from './delimiter-cased-properties.d.ts';
+import type {DelimiterCasedProperties} from './delimiter-cased-properties.d.ts';
 
 /**
 Convert object properties to snake case but not recursively.

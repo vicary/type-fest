@@ -1,4 +1,4 @@
-import type { IsLowerCase, IsNumeric, IsUpperCase, WordSeparators } from './internal.d.ts';
+import type {IsLowerCase, IsNumeric, IsUpperCase, WordSeparators} from './internal.d.ts';
 
 type SkipEmptyWord<Word extends string> = Word extends '' ? [] : [Word];
 

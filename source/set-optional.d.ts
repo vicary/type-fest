@@ -1,5 +1,5 @@
-import type { Except } from './except.d.ts';
-import type { Simplify } from './simplify.d.ts';
+import type {Except} from './except.d.ts';
+import type {Simplify} from './simplify.d.ts';
 
 /**
 Create a type that makes the given keys optional. The remaining keys are kept as is. The sister of the `SetRequired` type.

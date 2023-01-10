@@ -1,4 +1,4 @@
-import type { DelimiterCase } from './delimiter-case.d.ts';
+import type {DelimiterCase} from './delimiter-case.d.ts';
 
 /**
 Convert a string literal to kebab-case.

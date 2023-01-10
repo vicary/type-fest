@@ -114,7 +114,7 @@ or via Import Map
 ## Usage
 
 ```ts
-import type { Except } from "type-fest";
+import type {Except} from "type-fest";
 
 type Foo = {
 	unicorn: string;
@@ -289,8 +289,8 @@ _If you know one of our types by a different name, add it here for discovery._
   [Playground](https://www.typescriptlang.org/play?#code/JYWwDg9gTgLgBDAnmApnA3gBQIYGMDW2A5igFIDOEAdnNuXAEJ0o4HFmVUC+cAZlBBBwA5ElQBaXinIxhAbgCwAKFCRYCZGnQAZYFRgooPfoJHSANntmKlysWlaESFanAC8jZo-YuaAMgwLKwBhal5gIgB+AC44XX1DADpQqnCiLhsgA)
 
   ```ts
-  import type { PackageJson as BasePackageJson } from "type-fest";
-  import type { Linter } from "eslint";
+  import type {PackageJson as BasePackageJson} from "type-fest";
+  import type {Linter} from "eslint";
 
   type PackageJson = BasePackageJson & { eslintConfig?: Linter.Config };
   ```
@@ -651,16 +651,19 @@ There are many advanced types most users don't know about.
   	// Mutate array randomly changing its' elements indexes.
   }
 
-	function callNTimes<Fn extends (...arguments_: any[]) => any> (func: Fn, callCount: number) {
-		// Type that represents the type of the received function parameters.
-		type FunctionParameters = Parameters<Fn>;
+  function callNTimes<Fn extends (...arguments_: any[]) => any>(
+  	func: Fn,
+  	callCount: number
+  ) {
+  	// Type that represents the type of the received function parameters.
+  	type FunctionParameters = Parameters<Fn>;
 
-		return function (...arguments_: FunctionParameters) {
-			for (let i = 0; i < callCount; i++) {
-				func(...arguments_);
-			}
-		}
-	}
+  	return function (...arguments_: FunctionParameters) {
+  		for (let i = 0; i < callCount; i++) {
+  			func(...arguments_);
+  		}
+  	};
+  }
 
   const shuffleTwice = callNTimes(shuffle, 2);
   ```
@@ -685,30 +688,30 @@ There are many advanced types most users don't know about.
   	}
   }
 
-	class InstanceCache<T extends (new (...arguments_: any[]) => any)> {
-		private ClassConstructor: T;
-		private cache: Map<string, InstanceType<T>> = new Map();
+  class InstanceCache<T extends new (...arguments_: any[]) => any> {
+  	private ClassConstructor: T;
+  	private cache: Map<string, InstanceType<T>> = new Map();
 
   	constructor(ctr: T) {
   		this.ClassConstructor = ctr;
   	}
 
-		getInstance (...arguments_: ConstructorParameters<T>): InstanceType<T> {
-			const hash = this.calculateArgumentsHash(...arguments_);
+  	getInstance(...arguments_: ConstructorParameters<T>): InstanceType<T> {
+  		const hash = this.calculateArgumentsHash(...arguments_);
 
   		const existingInstance = this.cache.get(hash);
   		if (existingInstance !== undefined) {
   			return existingInstance;
   		}
 
-			return new this.ClassConstructor(...arguments_);
-		}
+  		return new this.ClassConstructor(...arguments_);
+  	}
 
-		private calculateArgumentsHash(...arguments_: any[]): string {
-			// Calculate hash.
-			return 'hash';
-		}
-	}
+  	private calculateArgumentsHash(...arguments_: any[]): string {
+  		// Calculate hash.
+  		return "hash";
+  	}
+  }
 
   const articleCache = new InstanceCache(ArticleModel);
   const amazonArticle = articleCache.getInstance("Amazon forests burining!");
@@ -777,18 +780,18 @@ There are many advanced types most users don't know about.
 
   const instanceCounter: Map<Function, number> = new Map();
 
-	interface Constructor {
-			new(...arguments_: any[]): any;
-	}
+  interface Constructor {
+  	new (...arguments_: any[]): any;
+  }
 
-	// Keep track how many instances of `Constr` constructor have been created.
-	function getInstance<
-			Constr extends Constructor,
-			Arguments extends ConstructorParameters<Constr>
-	>(constructor: Constr, ...arguments_: Arguments): InstanceType<Constr> {
-			let count = instanceCounter.get(constructor) || 0;
+  // Keep track how many instances of `Constr` constructor have been created.
+  function getInstance<
+  	Constr extends Constructor,
+  	Arguments extends ConstructorParameters<Constr>
+  >(constructor: Constr, ...arguments_: Arguments): InstanceType<Constr> {
+  	let count = instanceCounter.get(constructor) || 0;
 
-			const instance = new constructor(...arguments_);
+  	const instance = new constructor(...arguments_);
 
   	instanceCounter.set(constructor, count + 1);
 

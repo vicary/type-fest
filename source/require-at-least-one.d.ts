@@ -1,4 +1,4 @@
-import type { Except } from './except.d.ts';
+import type {Except} from './except.d.ts';
 
 /**
 Create a type that requires at least one of the given keys. The remaining keys are kept as is.

@@ -1,5 +1,5 @@
-import { expectError, expectType } from 'tsd';
-import type { Asyncify } from '../index.d.ts';
+import {expectError, expectType} from 'tsd';
+import type {Asyncify} from '../index.d.ts';
 
 declare function getFooSync(name: string): RegExp;
 declare function getFooWithThisArgumentSync(this: Date, name: string): RegExp;

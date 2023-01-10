@@ -1,5 +1,5 @@
-import { expectAssignable, expectError } from 'tsd';
-import type { RequireAtLeastOne } from '../index.d.ts';
+import {expectAssignable, expectError} from 'tsd';
+import type {RequireAtLeastOne} from '../index.d.ts';
 
 type SystemMessages = {
 	default: string;

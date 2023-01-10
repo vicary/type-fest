@@ -1,5 +1,5 @@
-import { expectType } from 'tsd';
-import type { PickIndexSignature, Simplify } from '../index.d.ts';
+import {expectType} from 'tsd';
+import type {PickIndexSignature, Simplify} from '../index.d.ts';
 
 declare const symbolKey: unique symbol;
 

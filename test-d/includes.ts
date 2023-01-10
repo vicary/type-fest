@@ -1,5 +1,5 @@
-import { expectError, expectType } from 'tsd';
-import type { Includes } from '../index.d.ts';
+import {expectError, expectType} from 'tsd';
+import type {Includes} from '../index.d.ts';
 
 const includesEmptyArray: Includes<[], 'abc'> = false;
 expectType<false>(includesEmptyArray);
