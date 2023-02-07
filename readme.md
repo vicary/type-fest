@@ -1,6 +1,6 @@
 This is a fork of the original `type-fest` from NPM with modifications for Deno compatibility, this repo will be kept up to date via periodic rebasing.
 
-Want to see a Deno port happening? [buy me a coffee](https://www.buymeacoffee.com/vicary) and tell me about it.
+Want to see a Deno port happening? [buy me a coffee](https://www.github.com/sponsors/vicary) and tell me about it.
 
 ---
 
@@ -114,7 +114,7 @@ or via Import Map
 ## Usage
 
 ```ts
-import type {Except} from "type-fest";
+import type { Except } from "type-fest";
 
 type Foo = {
 	unicorn: string;
@@ -289,8 +289,8 @@ _If you know one of our types by a different name, add it here for discovery._
   [Playground](https://www.typescriptlang.org/play?#code/JYWwDg9gTgLgBDAnmApnA3gBQIYGMDW2A5igFIDOEAdnNuXAEJ0o4HFmVUC+cAZlBBBwA5ElQBaXinIxhAbgCwAKFCRYCZGnQAZYFRgooPfoJHSANntmKlysWlaESFanAC8jZo-YuaAMgwLKwBhal5gIgB+AC44XX1DADpQqnCiLhsgA)
 
   ```ts
-  import type {PackageJson as BasePackageJson} from "type-fest";
-  import type {Linter} from "eslint";
+  import type { PackageJson as BasePackageJson } from "type-fest";
+  import type { Linter } from "eslint";
 
   type PackageJson = BasePackageJson & { eslintConfig?: Linter.Config };
   ```
