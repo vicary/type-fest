@@ -1,8 +1,8 @@
 // Basic
-export * from './source/primitive.d.ts';
-export * from './source/typed-array.d.ts';
-export * from './source/basic.d.ts';
-export * from './source/observable-like.d.ts';
+export type * from './source/primitive.d.ts';
+export type * from './source/typed-array.d.ts';
+export type * from './source/basic.d.ts';
+export type * from './source/observable-like.d.ts';
 
 // Utilities
 export type {KeysOfUnion} from './source/keys-of-union.d.ts';

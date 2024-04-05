@@ -23,11 +23,10 @@
 	},
 	"scripts": {
 		"test:set-parameter-type": "tsc --noEmit test-d/set-parameter-type",
-		"test:source-files-extension": "node script/test/source-files-extension.js",
 		"test:tsc": "tsc",
 		"test:tsd": "tsd",
 		"test:xo": "xo",
-		"test": "run-p test:*"
+		"test": "run-p 'test:*'"
 	},
 	"files": [
 		"index.d.ts",
@@ -58,19 +57,23 @@
 			"@typescript-eslint/ban-ts-comment": "off",
 			"@typescript-eslint/ban-types": "off",
 			"@typescript-eslint/naming-convention": "off",
-			"import/extensions": "off",
 			"@typescript-eslint/no-redeclare": "off",
 			"@typescript-eslint/no-confusing-void-expression": "off",
 			"@typescript-eslint/no-unsafe-argument": "off",
-			"object-curly-newline": ["error", {
-				"multiline": true,
-				"consistent": true
-			}]
+			"n/file-extension-in-import": "off",
+			"object-curly-newline": [
+				"error",
+				{
+					"multiline": true,
+					"consistent": true
+				}
+			]
 		}
 	},
 	"tsd": {
 		"compilerOptions": {
 			"noUnusedLocals": false
 		}
-	}
+	},
+	"packageManager": "yarn@4.1.1"
 }
